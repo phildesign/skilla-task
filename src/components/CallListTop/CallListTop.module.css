@@ -1,0 +1,16 @@
+.root {
+	display: flex;
+	padding: 24px 0;
+}
+
+.row {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(7, auto);
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.title {
+	cursor: pointer;
+}
