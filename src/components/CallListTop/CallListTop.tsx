@@ -16,7 +16,7 @@ const CallListTop = (): JSX.Element => {
 			<div className={styles.row}>
 				{callListTopData.map((item) => {
 					return (
-						<div className={styles.col}>
+						<div className={styles.col} key={item}>
 							<div className={styles.title}>{item}</div>
 						</div>
 					);
