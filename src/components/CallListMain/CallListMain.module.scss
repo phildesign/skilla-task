@@ -1,10 +1,8 @@
-.root {
-}
-
 .row {
 	display: grid;
-	grid-template-columns: repeat(7, auto);
+	grid-template-columns: repeat(7, 1fr);
 }
 
-.col {
+.col:last-child {
+	text-align: right;
 }
