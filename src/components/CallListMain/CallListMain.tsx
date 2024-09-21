@@ -1,6 +1,7 @@
 import { CallListMainProps } from './CallListMain.props';
 import Type from '../Type/Type';
 import Time from '../Time/Time';
+import Employee from '../../Employee/Employee';
 
 import styles from './CallListMain.module.scss';
 
@@ -17,6 +18,14 @@ const CallListMain = ({ results }: CallListMainProps): JSX.Element => {
 
 							<div className={styles.col}>
 								<Time date={item.date} />
+							</div>
+
+							<div className={styles.col}>
+								<Employee
+									person_avatar={item.person_avatar}
+									person_name={item.person_name}
+									person_surname={item.person_surname}
+								/>
 							</div>
 						</div>
 					);
