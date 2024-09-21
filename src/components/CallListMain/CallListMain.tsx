@@ -4,6 +4,7 @@ import Time from '../Time/Time';
 import Employee from '../../Employee/Employee';
 import Call from '../Call/Call';
 import Source from '../Source/Source';
+import Grade from '../Grade/Grade';
 
 import styles from './CallListMain.module.scss';
 
@@ -36,6 +37,10 @@ const CallListMain = ({ results }: CallListMainProps): JSX.Element => {
 
 							<div className={styles.col}>
 								<Source source={item.source} />
+							</div>
+
+							<div className={styles.col}>
+								<Grade errors={item.errors} />
 							</div>
 						</div>
 					);
