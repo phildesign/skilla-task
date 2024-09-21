@@ -4,6 +4,7 @@ import Time from '../Time/Time';
 import Employee from '../../Employee/Employee';
 
 import styles from './CallListMain.module.scss';
+import Call from '../Call/Call';
 
 const CallListMain = ({ results }: CallListMainProps): JSX.Element => {
 	return (
@@ -26,6 +27,10 @@ const CallListMain = ({ results }: CallListMainProps): JSX.Element => {
 									person_name={item.person_name}
 									person_surname={item.person_surname}
 								/>
+							</div>
+
+							<div className={styles.col}>
+								<Call phone={item.partner_data.phone} />
 							</div>
 						</div>
 					);
