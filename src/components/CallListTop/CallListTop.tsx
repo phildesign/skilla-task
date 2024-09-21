@@ -1,4 +1,4 @@
-import styles from './CallListTop.module.css';
+import styles from './CallListTop.module.scss';
 
 const callListTopData: string[] = [
 	'Тип',

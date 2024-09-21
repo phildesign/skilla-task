@@ -1,0 +1,17 @@
+.root {
+	&.in path {
+		fill: #005ff8;
+	}
+
+	&.inError path {
+		fill: #ea1a4f;
+	}
+
+	&.out path {
+		fill: #28a879;
+	}
+
+	&.outError path {
+		fill: #ea1a4f;
+	}
+}
