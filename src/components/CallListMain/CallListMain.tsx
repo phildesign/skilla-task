@@ -17,7 +17,7 @@ const CallListMain = ({ results }: CallListMainProps): JSX.Element => {
 					return (
 						<div className={styles.row} key={item.id}>
 							<div className={styles.col}>
-								<Type in_out={item.in_out} />
+								<Type in_out={item.in_out} status={item.status} />
 							</div>
 
 							<div className={styles.col}>

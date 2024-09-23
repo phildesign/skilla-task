@@ -3,14 +3,13 @@ import { TypeProps } from './Type.props';
 
 import styles from './Type.module.scss';
 
-const Type = ({ in_out }: TypeProps): JSX.Element => {
+const Type = ({ in_out, status }: TypeProps): JSX.Element => {
 	return (
 		<div
 			className={clsx(styles.root, {
 				[styles.in]: in_out === 1,
-				[styles.inError]: false,
 				[styles.out]: in_out === 0,
-				[styles.outError]: false,
+				[styles.error]: status === 'Не дозвонился',
 			})}>
 			{in_out === 1 ? (
 				<svg
