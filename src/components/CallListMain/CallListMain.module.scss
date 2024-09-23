@@ -1,6 +1,22 @@
 .row {
 	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: 24px 60px 96px 254px 197px 200px auto;
+	gap: 32px;
+	align-items: center;
+	border-bottom: 1px solid #eaf0fa;
+	padding: 22px 0;
+}
+
+.col:nth-child(3) {
+	margin-left: 16px;
+}
+
+.col:nth-child(4) {
+	margin-left: 29px;
+}
+
+.col:nth-child(5) {
+	margin-left: 40px;
 }
 
 .col:last-child {
