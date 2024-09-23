@@ -1,10 +1,17 @@
+.root {
+	padding-bottom: 40px;
+}
+
 .row {
 	display: grid;
 	grid-template-columns: 24px 60px 96px 254px 197px 200px auto;
 	gap: 32px;
 	align-items: center;
-	border-bottom: 1px solid #eaf0fa;
 	padding: 22px 0;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid #eaf0fa;
+	}
 }
 
 .col:nth-child(3) {
